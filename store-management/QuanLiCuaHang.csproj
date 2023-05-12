@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5B12CB9-69DD-4BEC-B9F7-127D8C8B095C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLiCuaHang</RootNamespace>
+    <AssemblyName>QuanLiCuaHang</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoCaoKho.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaoCaoKho.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DAL\Functions.cs" />
+    <Compile Include="GUI\FrmHDXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmHDXuat.Designer.cs">
+      <DependentUpon>FrmHDXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmHDNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmHDNhap.Designer.cs">
+      <DependentUpon>FrmHDNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmBaoHanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmBaoHanh.Designer.cs">
+      <DependentUpon>FrmBaoHanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmKhachHang.Designer.cs">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmSanPham.Designer.cs">
+      <DependentUpon>FrmSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmPass.Designer.cs">
+      <DependentUpon>FrmPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmTaiKhoan.Designer.cs">
+      <DependentUpon>FrmTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmINBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmINBaoCao.Designer.cs">
+      <DependentUpon>FrmINBaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmTinhLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmTinhLuong.Designer.cs">
+      <DependentUpon>FrmTinhLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmBaoCao.Designer.cs">
+      <DependentUpon>FrmBaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmNhanVien.Designer.cs">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmPhongBan.Designer.cs">
+      <DependentUpon>FrmPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rpBaoHanh.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpBaoHanh.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptBaoHanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptBaoHanh.Designer.cs">
+      <DependentUpon>rptBaoHanh.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoCaoKho.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BaoCaoKho.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmHDXuat.resx">
+      <DependentUpon>FrmHDXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmBaoHanh.resx">
+      <DependentUpon>FrmBaoHanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmHDNhap.resx">
+      <DependentUpon>FrmHDNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmKhachHang.resx">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmSanPham.resx">
+      <DependentUpon>FrmSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmPass.resx">
+      <DependentUpon>FrmPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmTaiKhoan.resx">
+      <DependentUpon>FrmTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmINBaoCao.resx">
+      <DependentUpon>FrmINBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmTinhLuong.resx">
+      <DependentUpon>FrmTinhLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmBaoCao.resx">
+      <DependentUpon>FrmBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmNhanVien.resx">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmPhongBan.resx">
+      <DependentUpon>FrmPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="rpBaoHanh.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpBaoHanh.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBaoHanh.resx">
+      <DependentUpon>rptBaoHanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
